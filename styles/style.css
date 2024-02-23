@@ -8,3 +8,116 @@ body {
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
 }
+
+#services {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service {
+  width: 50%;
+  border: 3px solid salmon;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service article {
+  align-items: center;
+  width: 80%;
+  max-width: 30rem;
+  border: 2px solid aqua;
+}
+.service article p {
+  padding: 0rem 0.75rem 0rem 0.75rem;
+  color: #141414;
+}
+
+.service-header {
+  padding: 0.25rem 0.75rem 0rem 0.75rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.service-header img {
+  width: 3rem;
+}
+
+.service-header h3 {
+  color: #092635;
+}
+
+.service-carousel {
+  width: 100%;
+  height: 10rem;
+  border: 1px solid slateblue;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-carousel-content {
+  width: 100%;
+  height: 10rem;
+  position: absolute;
+  transition: all 0.5s;
+}
+.service-carousel-content img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.service-footer {
+  width: 100%;
+  
+  padding-inline: 1rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.service-footer h4 {
+  flex: auto;
+  font-weight: 300;
+}
+
+.service-footer img {
+  width: 2rem;
+}
+.btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  z-index: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  font-size: 18px;
+}
+
+.btn:active {
+  transform: scale(1.1);
+}
+
+.btn-prev {
+  top: 45%;
+  left: 2%;
+}
+
+.btn-next {
+  top: 45%;
+  right: 2%;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .service {
+    width: 100%;
+  }
+}
