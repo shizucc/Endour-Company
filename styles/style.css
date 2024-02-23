@@ -54,7 +54,7 @@ body {
 
 @keyframes animateright {
     from {
-        right:-300px;opacity:0
+        right:-10rem;opacity:0
     } to {
         right:0;opacity:1
     }
@@ -63,6 +63,19 @@ body {
 .animate-right {
     position: relative;
     animation: animateright 1s;
+}
+
+@keyframes animatetop {
+    from {
+        top:-2rem;opacity:0
+    } to {
+        top:0;opacity:1
+    }
+}
+
+.animate-top {
+    position: relative;
+    animation: animatetop 0.5s;
 }
 
 .product-img {
@@ -75,7 +88,7 @@ body {
     }
 }
 
-#products {
+.products {
     font-weight: 700;
     color: #1B4242;
 }
