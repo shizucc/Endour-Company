@@ -52,12 +52,25 @@ body {
     font-size: 2rem;
 }
 
-#product-img {
+@keyframes animateright {
+    from {
+        right:-300px;opacity:0
+    } to {
+        right:0;opacity:1
+    }
+}
+
+.animate-right {
+    position: relative;
+    animation: animateright 1s;
+}
+
+.product-img {
     width: 15rem;
 }
 
 @media (max-width: 1035px) {
-    #product-img {
+    .product-img {
         display: none;
     }
 }
