@@ -18,16 +18,18 @@ body {
 .service {
   width: 50%;
   border: 3px solid salmon;
+  padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .service article {
+  background-color: #F1EFEF;
   align-items: center;
   width: 80%;
   max-width: 30rem;
-  border: 2px solid aqua;
+  border-radius: 0.25rem;
 }
 .service article p {
   padding: 0rem 0.75rem 0rem 0.75rem;
@@ -52,18 +54,17 @@ body {
 .service-carousel {
   width: 100%;
   height: 10rem;
-  border: 1px solid slateblue;
   position: relative;
   overflow: hidden;
 }
 
-.service-carousel-content {
+[class^="service-carousel-content"] {
   width: 100%;
   height: 10rem;
   position: absolute;
   transition: all 0.5s;
 }
-.service-carousel-content img {
+[class^="service-carousel-content"] img {
   position: relative;
   width: 100%;
   height: 100%;
@@ -80,9 +81,21 @@ body {
   flex-wrap: wrap;
 }
 
-.service-footer h4 {
+.service-footer p {
   flex: auto;
+  text-decoration: none;
   font-weight: 300;
+}
+.service-footer a {
+  text-decoration: none;
+}
+
+.service-footer a:hover{
+  font-weight: 500;
+}
+
+.service-footer a:active{
+  color: #000;
 }
 
 .service-footer img {
@@ -90,15 +103,15 @@ body {
 }
 .btn {
   position: absolute;
-  width: 40px;
-  height: 40px;
-  padding: 10px;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.4rem;
   border: none;
   border-radius: 50%;
-  z-index: 10px;
+  z-index: 1;
   cursor: pointer;
-  background-color: #fff;
-  font-size: 18px;
+  background-color: rgba(255, 255, 255,0.5);
+  font-size: 1.2rem;
 }
 
 .btn:active {
