@@ -2,10 +2,11 @@ function insertServiceToDOM(serviceList) {
   const services = document.getElementById("services");
 
   serviceList.forEach((service) => {
-    const { name, logo, description, url, images } = service;
+    const { name, logo, description, url, images, color } = service;
     const identifier = name.replace(/\s/g, "");
     const serviceContainer = document.createElement("div");
     serviceContainer.className = "service";
+    serviceContainer.style.backgroundColor = color;
 
     const serviceBody = document.createElement("article");
 
