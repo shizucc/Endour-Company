@@ -12,6 +12,13 @@ function handleCarousel(identifier) {
   let curSlide = 0;
   let maxSlide = serviceCaraouselContents.length - 1;
 
+  let interval;
+  interval = setInterval(toNextSlide, AUTO_NEXT_SLIDE_DURATION);
+  function resetInterval() {
+    clearInterval(interval);
+    interval = setInterval(toNextSlide, AUTO_NEXT_SLIDE_DURATION);
+  }
+
   function toNextSlide() {
     if (curSlide === maxSlide) {
       curSlide = 0;
@@ -38,14 +45,21 @@ function handleCarousel(identifier) {
       }%)`;
     });
   }
-  const nextSlide = document.getElementById(`btn-next-${identifier}`);
-  nextSlide.addEventListener("click", toNextSlide);
-  const prevSlide = document.getElementById(`btn-prev-${identifier}`);
-  prevSlide.addEventListener("click", toPrevSlide);
 
-  const autoToNextSlide = setInterval(toNextSlide, AUTO_NEXT_SLIDE_DURATION);
+  function handleNext() {
+    resetInterval();
+    toNextSlide();
+  }
+  function handlePrev() {
+    resetInterval();
+    toPrevSlide();
+  }
+  const nextSlide = document.getElementById(`btn-next-${identifier}`);
+  nextSlide.addEventListener("click", handleNext);
+  const prevSlide = document.getElementById(`btn-prev-${identifier}`);
+  prevSlide.addEventListener("click", handlePrev);
 
   return () => {
-    clearInterval(autoToNextSlide);
+    clearInterval(interval);
   };
 }

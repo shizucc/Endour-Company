@@ -1,6 +1,5 @@
 function insertServiceToDOM(serviceList) {
   const services = document.getElementById("services");
-  console.log(services);
 
   serviceList.forEach((service) => {
     const { name, logo, description, url, images } = service;

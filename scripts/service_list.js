@@ -11,6 +11,7 @@ const SERVICES = [
       "/assets/img/osareta_cover.png",
       "/assets/img/osareta_gameplay.png",
     ],
+    color: "#092635",
   },
   {
     name: "Endour Software",
@@ -23,5 +24,6 @@ const SERVICES = [
       "/assets/img/lykaia_cover.png",
       "/assets/img/osareta_gameplay.png",
     ],
+    color: "#9EC8B9",
   },
 ];
