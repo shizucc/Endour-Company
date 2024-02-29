@@ -11,13 +11,22 @@ body {
 
 /* INTRO SECTION */
 #intro {
-  padding: 3rem 8rem;
+  /* margin: auto; */
+  background-color: #5C8374;
+  /* justify-content: center; */
+
+}
+
+#intro-content{
+  background-color: blueviolet;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #intro-box {
   width:80%;
   margin: 0 auto;
-  margin-block: 8rem;
+  /* margin-block: 8rem; */
   display: flex;
   flex-wrap: wrap;
 }
