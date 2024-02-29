@@ -9,6 +9,146 @@ body {
     font-optical-sizing: auto;
 }
 
+/* INTRO SECTION */
+#intro {
+  padding: 3rem 8rem;
+}
+
+#intro-box {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 1210px) {
+  #box-left {
+    padding-right: 8rem;
+  }
+}
+
+@media (min-width: 980px) {
+  #box-left {
+    padding-right: 4rem;
+  }
+}
+
+.title {
+  font-size: 4rem;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+#title-left {
+  font-weight: 700;
+  color: #1B4242;
+}
+
+#title-right {
+  font-weight: 500;
+  color: #5C8374;
+}
+
+#subtitle {
+  font-size: 2rem;
+}
+
+@keyframes animateright {
+  from {
+    right: -10rem;
+    opacity: 0
+  }
+
+  to {
+    right: 0;
+    opacity: 1
+  }
+}
+
+.animate-right {
+  position: relative;
+  animation: animateright 1s;
+}
+
+@keyframes animatetop {
+  from {
+    top: -2rem;
+    opacity: 0
+  }
+
+  to {
+    top: 0;
+    opacity: 1
+  }
+}
+
+.animate-top {
+  position: relative;
+  animation: animatetop 0.5s;
+}
+
+.product-img {
+  width: 15rem;
+}
+
+@media (max-width: 1035px) {
+  .product-img {
+    display: none;
+  }
+}
+
+.products {
+  font-weight: 700;
+  color: #1B4242;
+}
+
+#arrow-box {
+  text-align: center;
+}
+
+@keyframes bounce {
+
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0)
+  }
+
+  40% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px)
+  }
+
+  60% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px)
+  }
+}
+
+#arrow-down {
+  padding-top: 2rem;
+  width: 3rem;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+#arrow-down:hover {
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
 #services {
   margin: auto;
   display: flex;
