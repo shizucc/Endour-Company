@@ -111,10 +111,10 @@ function insertServiceToDOM(serviceList) {
     return footer;
   }
 }
-
+var product_index = 0
+var product_img_index = 0
 document.addEventListener("DOMContentLoaded", () => {
   insertServiceToDOM(SERVICES);
-  var product_index = 0
-  var product_img_index = 0
+
   product_carousel()
 });

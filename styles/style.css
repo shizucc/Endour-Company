@@ -15,11 +15,14 @@ body {
 }
 
 #intro-box {
-  width: 100%;
+  width:80%;
   margin: 0 auto;
+  margin-block: 8rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-@media (min-width: 1210px) {
+/* @media (min-width: 1210px) {
   #box-left {
     padding-right: 8rem;
   }
@@ -29,7 +32,7 @@ body {
   #box-left {
     padding-right: 4rem;
   }
-}
+} */
 
 .title {
   font-size: 4rem;
@@ -90,11 +93,11 @@ body {
   width: 15rem;
 }
 
-@media (max-width: 1035px) {
+/* @media (max-width: 1035px) {
   .product-img {
     display: none;
   }
-}
+} */
 
 .products {
   font-weight: 700;
@@ -149,6 +152,7 @@ body {
   -moz-animation-name: bounce;
 }
 
+
 #services {
   margin: auto;
   display: flex;
@@ -158,6 +162,7 @@ body {
 .service {
   width: 50%;
   padding: 1rem;
+  padding-block: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
