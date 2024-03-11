@@ -4,29 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Endour Company</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <link rel="icon" type="image/x-icon" href="/assets/img/company_logo.png">
 </head>
 <body>
     <head>
         <nav>
-            <h1>Logo</h1>
-            <img src="" alt="">
+            <img src="assets/img/company_logo.png" alt="">
         </nav>
     </head>
 
     <main>
-        <section>
-            <h1>Intro</h1>
+        <section id="intro">
+            <div id="intro-content">
+                <div id="intro-content-main">
+                    <div>
+                        <h1 id="title-right">Endour&nbsp;</h1>
+                        <h1 id="title-left">Company</h1>
+                    </div>
+                    <p>Kami menyediakan berbagai layanan untuk mendukung bisnis Anda. Mulai dari
+                        <span class="products animate-top">Game</span>
+                        <span class="products animate-top">Aplikasi Web</span>
+                        <span class="products animate-top">Aplikasi Mobile</span>
+                        <span class="products animate-top">Robotika</span>
+                        <span class="products animate-top">IoT</span>
+                    </p>
+                </div>
+                <div>
+                    <img id="intro-content-img" src="assets/img/product_web.png" alt="Product Image of Web App" >
+                    <!-- <img src="assets/img/product_mobile.png" alt="Product Image of Mobile App"
+                        class="product-img product-carousel animate-right" style="width: 14.6rem;">
+                    <img src="assets/img/product_robot.png" alt="Product Image Robotics" class="product-img product-carousel animate-right"> -->
+                </div>
+            </div>
+            <div id="intro-navigation">
+                <a href="#services">
+                    <img src="assets/img/arrow_down.png" alt="Arrow Pointing Down" id="arrow-down">
+                </a>
+            </div>
         </section>
-        <section>
-            <h1>Layanan</h1>
+        <section id="services">
         </section>
-        <section>
-            <h1>About</h1>
+        <section id="about">
+            <div id="about-header">
+                <h1>Hubungi Kami</h1>
+                <p>Konsultasikan Kebutuhan Bisnis Anda Dengan Kami</p>
+            </div>
+            <div class="flex-container">
+                <div>
+                    <img src="assets/img/Gmail.png" alt="">
+                    <a class="button button-gmail" href="#">Gmail</a>
+                </div>
+                <div>
+                    <img src="assets/img/Whatsapp.png" alt="">
+                    <a class="button  button-wa" href="#">Whatsapp</a>
+                </div>
+                <div>
+                    <img src="assets/img/Instagram.png" alt="">
+                    <a class="button  button-ig" href="#">Instagram</a>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>Footer</footer>
+    <footer>
+        <p><b>Copyright © 2021 - 2024 Endour Company</b></p>
+        <p>All Rights Reserved</p>
+    </footer>
+    <script src="./scripts/service_list.js"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/carousel.js"></script>
 </body>
 </html>
