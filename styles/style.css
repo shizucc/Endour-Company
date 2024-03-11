@@ -33,13 +33,16 @@ body {
 .flex-container{
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
   padding: 0 2rem;
+  justify-content: center;
 }
 
 .flex-container > div {
   display: flex;
-  margin: 0 auto;
+  background-color: aqua;
+  max-width: 20rem;
   padding: 10px;
   text-align: center;
   flex-direction: column;
@@ -50,9 +53,7 @@ body {
   margin: 0px auto;
 }
 
-
-.button-gmail{
-  background-color: #0085F7;
+.button{
   margin-top: 20px;
   border: 0;
   padding: 10px;
@@ -61,64 +62,22 @@ body {
   border-radius: 32px;
   transition-duration: 0.5s;
   text-decoration: none;
-  
 }
 
-.button-gmail:hover{
-  background-color: #0085F7;
-  margin-top: 20px;
-  border: 0;
-  padding: 10px;
-  color: white;
-  font-weight: bold;
-  border-radius: 32px;
+.button:hover{
   transform: scale(1.1);
+}
+
+.button-gmail{
+  background-color: #0085F7;  
 }
 
 .button-wa{
   background-color: #64B161;
-  margin-top: 20px;
-  border: 0;
-  padding: 10px;
-  color: white;
-  font-weight: bold;
-  border-radius: 32px;
-  transition-duration: 0.5s;
-  text-decoration: none;
-}
-
-.button-wa:hover{
-  background-color: #64B161;
-  margin-top: 20px;
-  border: 0;
-  padding: 10px;
-  color: white;
-  font-weight: bold;
-  border-radius: 32px;
-  transform: scale(1.1);
 }
 
 .button-ig{
   background-color: #F10144;
-  margin-top: 20px;
-  border: 0;
-  padding: 10px;
-  color: white;
-  font-weight: bold;
-  border-radius: 32px;
-  transition-duration: 0.5s;
-  text-decoration: none;
-}
-
-.button-ig:hover{
-  background-color: #F10144;
-  margin-top: 20px;
-  border: 0;
-  padding: 10px;
-  color: white;
-  font-weight: bold;
-  border-radius: 32px;
-  transform: scale(1.1);
 }
 
 footer{
