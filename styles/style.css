@@ -30,6 +30,21 @@ body {
     min-height: 100vh;
 }
 
+#about-header{
+  margin-bottom: 1.5rem;
+}
+
+#about-header h1{
+  margin: 1rem;
+  text-align: center;
+  font-size: clamp(2rem,4vw,4rem)
+}
+#about p{
+  text-align: center;
+  margin: 0;
+  font-size: clamp(1.5rem,4vw,2rem)
+}
+
 .flex-container{
   width: 100%;
   display: flex;
@@ -41,15 +56,15 @@ body {
 
 .flex-container > div {
   display: flex;
-  background-color: aqua;
-  max-width: 20rem;
-  padding: 10px;
+  max-width: 15rem;
+  margin: 1rem;
   text-align: center;
   flex-direction: column;
+
 }
 
 .flex-container > div > img{
-  width: 45%;
+  width: clamp(25%, 10vw, 45%);
   margin: 0px auto;
 }
 
