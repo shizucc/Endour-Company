@@ -1,6 +1,6 @@
 function product_carousel() {
   let products = document.getElementsByClassName("products");
-  let products_img = document.getElementsByClassName("product-carousel");
+  let products_img = document.getElementsByClassName("product-img");
 
   for (let product of products) {
     product.style.display = "none";
