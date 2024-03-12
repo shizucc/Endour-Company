@@ -1,3 +1,100 @@
+const SERVICES = [
+  {
+    name: "Endour Studio",
+    logo: "/assets/img/studio_logo.png",
+    description:
+      "Endour Studio adalah studio independen <strong>Pengembang Game</strong>  yang berfokus pada game 2D untuk platform Windows, Linux, Android, dan Web.",
+    url: "https://endourstudio.itch.io/",
+    images: [
+      "/assets/img/service/lykaia_cover.png",
+      "/assets/img/service/lykaia_gameplay.png",
+      "/assets/img/service/osareta_cover.png",
+      "/assets/img/service/osareta_gameplay.png",
+    ],
+    color: "#092635",
+  },
+  {
+    name: "Endour Software",
+    logo: "/assets/img/company_logo.png",
+
+    description:
+      "Endour Software adalah software house yang bergerak dalam <strong>Pengembangan Aplikasi Perangkat Lunak</strong> untuk Web, Mobile, serta Robotika dan IoT.",
+    url: "",
+    images: [
+      "/assets/img/service/aray.jpg",
+      "/assets/img/service/insideU.jpg",
+      "/assets/img/service/ionchat.jpg",
+    ],
+    color: "#9EC8B9",
+  },
+];
+
+const AUTO_NEXT_SLIDE_DURATION = 4000;
+
+function handleCarousel(identifier) {
+  const serviceCaraouselContents = document.querySelectorAll(
+    `.service-carousel-content-${identifier}`
+  );
+
+  serviceCaraouselContents.forEach((serviceCaraouselContent, index) => {
+    serviceCaraouselContent.style.transform = `translateX(${index * 100}%)`;
+  });
+
+  let curSlide = 0;
+  let maxSlide = serviceCaraouselContents.length - 1;
+
+  let interval;
+  interval = setInterval(toNextSlide, AUTO_NEXT_SLIDE_DURATION);
+  function resetInterval() {
+    clearInterval(interval);
+    interval = setInterval(toNextSlide, AUTO_NEXT_SLIDE_DURATION);
+  }
+
+  function toNextSlide() {
+    if (curSlide === maxSlide) {
+      curSlide = 0;
+    } else {
+      curSlide++;
+    }
+
+    serviceCaraouselContents.forEach((serviceCaraouselContent, index) => {
+      serviceCaraouselContent.style.transform = `translateX(${
+        100 * (index - curSlide)
+      }%)`;
+    });
+  }
+  function toPrevSlide() {
+    if (curSlide === 0) {
+      curSlide = maxSlide;
+    } else {
+      curSlide -= 1;
+    }
+
+    serviceCaraouselContents.forEach((serviceCaraouselContent, index) => {
+      serviceCaraouselContent.style.transform = `translateX(${
+        100 * (index - curSlide)
+      }%)`;
+    });
+  }
+
+  function handleNext() {
+    resetInterval();
+    toNextSlide();
+  }
+  function handlePrev() {
+    resetInterval();
+    toPrevSlide();
+  }
+  const nextSlide = document.getElementById(`btn-next-${identifier}`);
+  nextSlide.addEventListener("click", handleNext);
+  const prevSlide = document.getElementById(`btn-prev-${identifier}`);
+  prevSlide.addEventListener("click", handlePrev);
+
+  return () => {
+    clearInterval(interval);
+  };
+}
+
 function product_carousel() {
   let products = document.getElementsByClassName("products");
   let products_img = document.getElementsByClassName("product-img");
