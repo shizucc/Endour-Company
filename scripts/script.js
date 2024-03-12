@@ -219,8 +219,9 @@ function insertServiceToDOM(serviceList) {
 }
 var product_index = 0;
 var product_img_index = 0;
-document.addEventListener("DOMContentLoaded", () => {
-  insertServiceToDOM(SERVICES);
 
+document.addEventListener("DOMContentLoaded", () => {
   product_carousel();
+  insertServiceToDOM(SERVICES);
+  console.log("Hello");
 });
