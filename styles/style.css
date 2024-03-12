@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth
   }
 body {
     margin: 0;
@@ -10,6 +11,10 @@ body {
 }
 
 /* INTRO SECTION */
+
+#intro {
+  padding-inline: 0.75rem;
+}
 
 #intro-content{
   padding: 4rem 1rem 0 1rem ;
@@ -23,16 +28,13 @@ body {
   max-width: 40rem;
 }
 
-#intro-content-img {
-  width: clamp(200px, 50vw, 400px)
-}
 #intro-content-main div{
   display: flex;
   flex-wrap: wrap;
   margin: 0;
 }
 #intro-content-main h1{
-  margin: 0;
+  margin-block: -0.5rem;
 }
 
 #title-left {
@@ -91,7 +93,7 @@ body {
 }
 
 .product-img {
-  width: 15rem;
+  width: clamp(200px, 50vw, 400px)
 }
 
 .products {
@@ -147,6 +149,7 @@ body {
   -moz-animation-name: bounce;
 }
 
+/* SERVICES SECTION */
 
 #services {
   margin: auto;
@@ -180,6 +183,10 @@ body {
   display: flex;
   gap: 1rem;
   align-items: center;
+}
+
+.service-header a {
+  text-decoration: none;
 }
 
 .service-header img {
@@ -285,6 +292,8 @@ nav img {
 
 #about{
   padding-block: 3rem;
+  padding-inline: 1rem;
+  background-color: #F1EFEF;
 }
 
 #about-header{
@@ -355,7 +364,6 @@ nav img {
 footer{
   text-align: center;
   bottom: 0;
-  margin-top: 20px;
   padding: 10px 0;
   color: white;
   background-color: #092635;
