@@ -15,7 +15,7 @@ const SERVICES = [
   },
   {
     name: "Endour Software",
-    logo: "/assets/img/studio_logo.png",
+    logo: "/assets/img/company_logo.png",
 
     description:
       "Endour Software adalah software house yang bergerak dalam <strong>Pengembangan Aplikasi Perangkat Lunak</strong> untuk Web, Mobile, serta Robotika dan IoT.",
