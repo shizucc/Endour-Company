@@ -34,7 +34,7 @@ body {
   margin: 0;
 }
 #intro-content-main h1{
-  margin: 0;
+  margin-block: -0.5rem;
 }
 
 #title-left {
@@ -185,6 +185,10 @@ body {
   align-items: center;
 }
 
+.service-header a {
+  text-decoration: none;
+}
+
 .service-header img {
   width: 3rem;
 }
@@ -289,6 +293,7 @@ nav img {
 #about{
   padding-block: 3rem;
   padding-inline: 1rem;
+  background-color: #F1EFEF;
 }
 
 #about-header{
@@ -359,7 +364,6 @@ nav img {
 footer{
   text-align: center;
   bottom: 0;
-  margin-top: 20px;
   padding: 10px 0;
   color: white;
   background-color: #092635;
