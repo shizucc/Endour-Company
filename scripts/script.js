@@ -4,7 +4,7 @@ const SERVICES = [
     logo: "/assets/img/studio_logo.png",
     description:
       "Endour Studio adalah studio independen <strong>Pengembang Game</strong>  yang berfokus pada game 2D untuk platform Windows, Linux, Android, dan Web.",
-    url: "https://endourstudio.itch.io/",
+    url: "https://studio-endour.rf.gd/",
     images: [
       "/assets/img/service/lykaia_cover.png",
       "/assets/img/service/lykaia_gameplay.png",
@@ -19,7 +19,7 @@ const SERVICES = [
 
     description:
       "Endour Software adalah software house yang bergerak dalam <strong>Pengembangan Aplikasi Perangkat Lunak</strong> untuk Web, Mobile, serta Robotika dan IoT.",
-    url: "",
+    url: "http://software-endour.rf.gd/",
     images: [
       "/assets/img/service/aray.jpg",
       "/assets/img/service/insideU.jpg",
